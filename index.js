@@ -22,43 +22,6 @@
         
 //     }
 // }
- 
-/*
-Exercise 2
- 
-7. Write a JavaScript program which iterates the integers from 1 to 100.
-But for multiples of three print "Fizz" instead of the number and for the multiples of five print "Buzz".
-For numbers which are multiples of both three and five print "FizzBuzz". Go to the editor
-0 1 2 "Fizz" 4 "Buzz" "Fizz" 7 8 "Fizz" "Buzz" etc
- 
- 
-Exercise 5
- 
-Given a string change the every second letter to an uppercase ‘Z’. Assume
-there are no space.
- 
-let str1 = "javascript";  
-Example output:
-jZvZsZrZpZ OR each letter on a new line
-HINT: You can use  if((i+1) % 2 == 0) to check for even indexes
- 
-Exercise 6
- 
-Check if a string contains the letter “y”. Print “yes” if it does and “no” if it does not.
- 
-let str2 = "don’t know why";
-Example output:
-“yes”
- 
-Exercise 7
- 
-Given a number n Calculate the factorial of the number
- 
-let n2 = 4; //  4 * 3 * 2 * 1 = 24
-Example output:
-24
- 
-*/
   // *********** bodlogo 2 ***********
 // for (i=0; i<=100; i++) 
 // {
@@ -168,8 +131,7 @@ Example output:
 
 // if (str2[i]=="y" || str2[i]=="Y"){ 
 //     sum=sum + 1
-// }
-// }
+// } }
 // if(sum==1) {
 //  console.log("yes");
  
@@ -311,12 +273,22 @@ Example output:
 // Example Output:
 // 7 is a prime number
 
-// for (i=1 ; i<100 ; i++) {
-//     if(i/7===1) {
-//         console.log(i + " is prime number ");
-        
-//     }
-// }
+for(i=2 ; i<10 ; i++)
+{
+  if(anhniitoomon(i) === true) console.log(i + " too anhniii too ");
+}
+function anhniitoomon(too) {
+  var anhniitoomon = true;
+  for(let x = 2; x < too ; x++)
+  {
+if(too % x === 0) {
+  anhniitoomon = false;
+break;
+
+}
+  }
+  return anhniitoomon;
+}
  
 // Exercise 15
  
@@ -527,24 +499,35 @@ Example output:
 // let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
 // Example Output:
 // Missing number: 4
-let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
-for (i=0 ; i<=arr.length ; i++) {
-  if(i!==" " + arr[i]) {
-    console.log("4 missin");
-  }
-  else {
-    console.log("buren bna");
+
+ //buruuu bodson asuuh
+
+
+// let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
+// for (i=0 ; i<=arr.length ; i++) {
+//   if(i!==" " + arr[i]) {
+//     console.log("4 missin");
+//   }
+//   else {
+//     console.log("buren bna");
     
-  }
-}
+//   }
+// }
  
 // Exercise 25
  
 // Filter Positive Numbers Write a loop to filter out positive numbers from an array.
  
 // let arr = [-3, 5, -2, 0, 9, -8];
-// Example Output:
-// [5, 9]
+// // Example Output:
+// // [5, 9]
+// for (i=0 ; i<= arr.length ; i++) {
+//   if(arr[i]>0) {
+//     console.log(arr[i]);
+    
+//   }
+
+// }
  
 // Exercise 26
  
@@ -557,6 +540,23 @@ for (i=0 ; i<=arr.length ; i++) {
 // ***
 // ****
 // *****
+
+
+// bodlogo ***********
+
+
+// let a = "*"
+// let sum=[]
+// for (i=0 ; i<1 ; i++)
+// {
+//   for(j=0 ; j<5 ; j++){
+//     sum +=a
+//     console.log(sum);
+    
+//   }
+// }
+
+
  
 // Exercise 27
  
@@ -566,13 +566,43 @@ for (i=0 ; i<=arr.length ; i++) {
 // Example Output:
 // Sum of digits: 15
  
+// let sum = 12345;
+// let text = sum.toString();
+// let a=0
+// for (let i = 0 ; i<=text.length ; i++) {
+//   a+=parseInt(text[i])
+//   console.log(a);
+// }
+
+// yagaad nan bolson be
+
+ 
 // Exercise 28
  
 // Remove Duplicates from an Array Write a loop to remove duplicate elements from an array.
  
 // let arr = [1, 2, 3, 2, 1, 4];
 // Example Output:
-// [1, 2, 3, 4]
+// let c;
+// // [1, 2, 3, 4]
+// for(i=0 ; i<arr.length ; i++) {
+//   if (arr[i]!= arr[i+1]) {
+//     c+=arr[i].toString()
+//     if (arr[i])
+    
+//   }
+// }
+
+// let a = [1, 2, 3, 2, 1, 4];
+// let a1 = [];
+// a.forEach(element => {
+//     if (!a1.includes(element)) {
+//         a1.push(element);
+//     }
+// });
+
+// console.log(a1);
+
  
 // Exercise 29
  
@@ -581,6 +611,8 @@ for (i=0 ; i<=arr.length ; i++) {
 // let arr = [4, 10, 9, 2, 7];
 // Example Output:
 // Second largest number: 9
+
+
  
 // Exercise 30
  
