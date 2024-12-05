@@ -467,18 +467,20 @@ Example output:
 // Example Output:
 // radar is a palindrome
 
-let str = "radar"
-for (i=0 ; i<=str.length ; i++) {
-sum1=str[i]
-  for ( j=str.length ; j >=0 ; j--)
-  {
-    if(str[i]!==str[j]) { 
-      sum=str[j] + str[i]
-      console.log(sum);
+// let str = "rqdtr"
+// for (i=0 ; i<=str.length ; i++) {
+// sum1=str[i]
+//   for ( j=str.length ; j >=str.length-i ; j--)
+//   {
+//     if(str[i]===str[j]) { 
+//       console.log("palindrom mon ");
+//     }
+//     else {
+//       console.log("bish ");
       
-    }
-  }
-}
+//     }
+//   }
+// }
 
 
 
@@ -490,7 +492,34 @@ sum1=str[i]
 // let sentence = "Loops are fun to learn";
 // Example Output:
 // Number of words: 5
+
+// const count = (s) => {
+//   let c = 0;
+//   let inWord = false;
+
+//   for (const char of s) {
+//       if (/\s/.test(char)) {
+//           inWord = false;
+//       } else if (!inWord) {
+//           inWord = true;
+//           c++;
+//       }
+//   }
+
+//   return c;
+// };
+
+// const s = "Loops are fun to learn.";
+// console.log(count(s));
+
+
+
+
  
+
+
+
+
 // Exercise 24
  
 // Find Missing Number Write a loop to find the missing number in an array of integers from 1 to 10.
@@ -498,6 +527,16 @@ sum1=str[i]
 // let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
 // Example Output:
 // Missing number: 4
+let arr = [1, 2, 3, 5, 6, 7, 8, 9, 10];
+for (i=0 ; i<=arr.length ; i++) {
+  if(i!==" " + arr[i]) {
+    console.log("4 missin");
+  }
+  else {
+    console.log("buren bna");
+    
+  }
+}
  
 // Exercise 25
  
