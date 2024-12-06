@@ -566,13 +566,15 @@ break;
 // Example Output:
 // Sum of digits: 15
  
-// let sum = 12345;
-// let text = sum.toString();
-// let a=0
-// for (let i = 0 ; i<=text.length ; i++) {
-//   a+=parseInt(text[i])
-//   console.log(a);
-// }
+let sum = 12345;
+let text = sum.toString();
+let a=0
+for (let i = 0 ; i<text.length ; i++) {
+  console.log(i);
+  
+  a+=parseInt(text[i])
+  console.log(a);
+}
 
 // yagaad nan bolson be
 
