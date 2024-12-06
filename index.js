@@ -273,22 +273,22 @@
 // Example Output:
 // 7 is a prime number
 
-for(i=2 ; i<10 ; i++)
-{
-  if(anhniitoomon(i) === true) console.log(i + " too anhniii too ");
-}
-function anhniitoomon(too) {
-  var anhniitoomon = true;
-  for(let x = 2; x < too ; x++)
-  {
-if(too % x === 0) {
-  anhniitoomon = false;
-break;
+// for(i=2 ; i<10 ; i++)
+// {
+//   if(anhniitoomon(i) === true) console.log(i + " too anhniii too ");
+// }
+// function anhniitoomon(too) {
+//   var anhniitoomon = true;
+//   for(let x = 2; x < too ; x++)
+//   {
+// if(too % x === 0) {
+//   anhniitoomon = false;
+// break;
 
-}
-  }
-  return anhniitoomon;
-}
+// }
+//   }
+//   return anhniitoomon;
+// }
  
 // Exercise 15
  
@@ -566,15 +566,15 @@ break;
 // Example Output:
 // Sum of digits: 15
  
-let sum = 12345;
-let text = sum.toString();
-let a=0
-for (let i = 0 ; i<text.length ; i++) {
-  console.log(i);
+// let sum = 12345;
+// let text = sum.toString();
+// let a=0
+// for (let i = 0 ; i<text.length ; i++) {
+//   console.log(i);
   
-  a+=parseInt(text[i])
-  console.log(a);
-}
+//   a+=parseInt(text[i])
+//   console.log(a);
+// }
 
 // yagaad nan bolson be
 
@@ -609,12 +609,26 @@ for (let i = 0 ; i<text.length ; i++) {
 // Exercise 29
  
 // Find Second Largest Number Write a loop to find the second largest number in an array.
- 
-// let arr = [4, 10, 9, 2, 7];
+
 // Example Output:
 // Second largest number: 9
-
-
+// function findSecondLargest(arr) {
+//   let largest = arr[0];
+//   let secondLargest = -Infinity;
+// for (let i = 1; i < arr.length; i++) {
+//     if (arr[i] > largest) {
+//       secondLargest = largest;
+//       largest = arr[i];
+//     } else if (arr[i] < largest && arr[i] > secondLargest) {
+//       secondLargest = arr[i];
+//     }
+//   }
+//   return secondLargest;
+// }
+// // Example usage:
+// const array = [4, 10, 9, 2, 7];
+// const secondLargest = findSecondLargest(array);
+// console.log("Second largest element:", secondLargest);
  
 // Exercise 30
  
@@ -623,6 +637,25 @@ for (let i = 0 ; i<text.length ; i++) {
 // let arr = [5, 3, 8, 1, 4];
 // Example Output:
 // [1, 3, 4, 5, 8]
+// const sortArray = (arr)=>{
+//   let originalArr = [...arr];
+//   var sortArr = [];
+//   while(originalArr.length) {
+//       let val = originalArr[0];
+//       for ( let j = 1; j < originalArr.length; j++ ) {
+//           if(val>originalArr[j]) {
+//               val = originalArr[j];
+//           }
+//       }
+//       sortArr.push(originalArr.splice(originalArr.indexOf(val), 1)[0]);
+//   }
+//   return sortArr;
+// }
+// console.log(sortArray([5, 3, 8, 1, 4]));
+
+
+
+
  
 // Generate a Diamond Pattern Write a loop to create a diamond pattern.
 // Example Output:
@@ -633,3 +666,161 @@ for (let i = 0 ; i<text.length ; i++) {
 //  *****
 //   ***
 //    *
+// let n = 3; 
+// for (let i = 1; i <= 3; i++) { 
+// 	let str = "*"; 
+// 	let space = ' '; 
+// 	console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+// } 
+// for (let i = n - 1; i >= 1; i--) { 
+// 	let str = "*"; 
+// 	let space = ' '; 
+// 	console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+// }
+
+
+
+// let a = "*"
+// let sum=[]
+// for (i=0 ; i<1 ; i++)
+// {
+//   for(j=0 ; j<5 ; j++){
+//     sum +=a
+//     console.log(sum);
+    
+//   }
+// }
+
+
+
+
+
+
+
+
+
+//***************** bodlogo part2 */
+
+
+
+
+// 1. 3 оронтой той ороход тухайн 3 оронтой тооны цифрүүдийн нийлбэрийг ол.
+ 
+// let sum = 123;
+// let text = sum.toString();
+// let a=0
+// for (let i = 0 ; i<text.length ; i++) {
+  
+//   a+=parseInt(text[i])
+//   console.log(a);
+// }
+
+// 2. Монгол улсын иргэний бүртгэлийн дугаар болох регистрийн дугаар нь 10 оронтой эхний 2 орон нь үсэг үлдсэн нь тоо байдаг билээ.
+//    Тэгвэл хэрвээ хэрэглэгч гараас 10 тэмдэгт оруулахад эхлээд тухайн оруулсан утганы урт нь 10 байгаа эсэх дараа нь эхний 2 орон нь зөвхөн үсэг эсэх хамгийн эцэст нь үлдсэн 8 тэмдэгт нь 
+// бүхэлдээ тоо эсэхийг шалгана уу. Хэрвээ энэ бүх нөхцлүүд биелж байвал та монгол улсын регистрийн дугаарыг зөв орууллаа гэж харуулна уу. Хэрвээ аль нэг нөхцөл нь буруу байвал та монгол 
+// улсын иргэний бүртгэлийн дугаарыг буруу орууллаа гэж харуулна уу.
+//  on = hed ? log
+//  sar 12,10, 11, 
+// hednii 
+
+
+// let register = prompt(" registeraa oruulna uu ");
+// const specialCharacters = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
+// const numbers = /[1234567890]+/;
+// const hasText = /[A-z]/;  
+
+
+// if(register.length==10) {
+
+//   if(hasText.test(register[0]) && hasText.test(register[1]))  {
+//     if(numbers.test(register.substring(2,11)))
+//     {
+//       console.log("ta mongol ulsiin irgen mon bna");
+      
+//     }
+
+//   }
+//   else{ 
+//     console.log("ta buruu gazraaa registeriin textee bichsen bna");
+    
+//   }
+
+// }else {
+//   console.log("ta buruu register oruulsan bnaa");
+  
+// }
+
+
+
+
+
+
+// 3. While loop ашиглан пирамид хийх. 
+  //     \*
+  //   **\*
+  //   \*\*\***
+  //   **\*\*\*** \***\*\*\*\***s
+  //    \***\*\*\*\*\*\***
+  //    **\*\***\***\*\***
+  //  **\*\***\*\*\***\*\***
+          let n=0;
+          let i=1
+          let str = "*"; 
+          let space = ' '; 
+  while (10>n) {
+           i++;
+          //  console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+
+          // for (let i = 1; i <= 10; i++) { 
+          //   let str = "*"; 
+          //   let space = ' '; 
+          //   console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+          // }
+        
+        }
+        console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+
+
+
+// 4. While loop ашиглан 0-100 хүртэлх тооны бүх тэгш тоог олох.
+
+
+
+// 5. Анх нэг тоо хадгалаад дараа нь Prompt ашиглан 1 утга аваад тэр тоог таах хүртэл зогсолтгүй ажиллах loop бичээрэй.
+// 6. Prompt - оор авсан тоог хэдэн оронтойг хэвлэж гарга. Example: input = 1234567; digit: = 7;
+// 7. n - д prompt ашиглан утга оруулахад n\*n харьцаатай дөрвөлжин хэвлэх.
+// 8. prompt ашиглан n -д утга орууlахад palindrome тоо мөн эсэхийг шалгах.
+//    Example1 : input: 111, output: true
+//    Example2 : input: 110, output: false
+//    Example3 : input: 101, output: true
+//    https://en.wikipedia.org/wiki/Palindromic_number
+// 9. Заавар: n! - n факториал гэж уншина. Энэ нь 1,2,3,…,n тоонуудын үржвэр байна
+//    n!=1⋅2⋅3⋅⋯⋅n
+ 
+//    5! = 120 / 1*2*3*4*5/
+ 
+//    Бодлого :
+//    prompt - оор гараас тоо авч тэр тооныхоо факториалыг олох.
+ 
+// 10. example 1: input = "Hello World", output = "hELLO wORLD"
+//     example 2: input = "This Is STRING!", output = "tHIS iS string!"
+// 11. Prompt - оор тоо авна. 1 ээс promp оор авсан тоо хүртэлх нийлбэрийг ол. example: input = 10 1+2+3+4+5+6+7+8+9+10 = 55;
+// 12. 3-аас дээш оронтой тоо зарлаад тухайн тоогоо тонгоргож харуулна уу. Жишээ нв Ийм утга 12345 -> 54321.
+// 13. Өгөгдсөн тоо хүртлэх цифрүүдийг зайгаар тусгаарлан хэвлээрэй. Жишээ нь:
+//     Input: 4  
+//     Output: 0 1 2 3
+// 14. Бүхэл тоо өгөгдөнө. Жишээн дээрхтэй төстэй тоон хэлбэрийг үүсгэ.
+//     Input: 5
+//     Output: - 1 - 1 2 - 1 2 3 - 1 2 3 4 - 1 2 3 4 5
+//     15в
+// 15. Бүхэл тоо өгөгдөнө. Жишээн дээрхтэй төстэй тоон хэлбэрийг үүсгэ.
+//     Input: 5
+//     Output:
+//     - 5 4 3 2 1
+//     - 5 4 3 2
+//     - 5 4 3
+//     - 5 4
+//     - 5
+ 
+// Palindromic number
+// A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number (such as 16461) that remains the same when its digits are
