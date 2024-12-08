@@ -583,7 +583,7 @@
  
 // Remove Duplicates from an Array Write a loop to remove duplicate elements from an array.
  
-// let arr = [1, 2, 3, 2, 1, 4];
+// let arr = [1, 2, 3, 2, 1, 4];   
 // Example Output:
 // let c;
 // // [1, 2, 3, 4]
@@ -609,26 +609,12 @@
 // Exercise 29
  
 // Find Second Largest Number Write a loop to find the second largest number in an array.
-
+ 
+// let arr = [4, 10, 9, 2, 7];
 // Example Output:
 // Second largest number: 9
-// function findSecondLargest(arr) {
-//   let largest = arr[0];
-//   let secondLargest = -Infinity;
-// for (let i = 1; i < arr.length; i++) {
-//     if (arr[i] > largest) {
-//       secondLargest = largest;
-//       largest = arr[i];
-//     } else if (arr[i] < largest && arr[i] > secondLargest) {
-//       secondLargest = arr[i];
-//     }
-//   }
-//   return secondLargest;
-// }
-// // Example usage:
-// const array = [4, 10, 9, 2, 7];
-// const secondLargest = findSecondLargest(array);
-// console.log("Second largest element:", secondLargest);
+
+
  
 // Exercise 30
  
@@ -637,25 +623,6 @@
 // let arr = [5, 3, 8, 1, 4];
 // Example Output:
 // [1, 3, 4, 5, 8]
-// const sortArray = (arr)=>{
-//   let originalArr = [...arr];
-//   var sortArr = [];
-//   while(originalArr.length) {
-//       let val = originalArr[0];
-//       for ( let j = 1; j < originalArr.length; j++ ) {
-//           if(val>originalArr[j]) {
-//               val = originalArr[j];
-//           }
-//       }
-//       sortArr.push(originalArr.splice(originalArr.indexOf(val), 1)[0]);
-//   }
-//   return sortArr;
-// }
-// console.log(sortArray([5, 3, 8, 1, 4]));
-
-
-
-
  
 // Generate a Diamond Pattern Write a loop to create a diamond pattern.
 // Example Output:
@@ -763,56 +730,198 @@
   //    \***\*\*\*\*\*\***
   //    **\*\***\***\*\***
   //  **\*\***\*\*\***\*\***
-          let n=0;
-          let i=1
-          let str = "*"; 
-          let space = ' '; 
-  while (10>n) {
-           i++;
-          //  console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+//   let n=0;
+//   let i=1
+//   let str = "*"; 
+//   let space = ' '; 
+// while (10>=i) {
 
-          // for (let i = 1; i <= 10; i++) { 
-          //   let str = "*"; 
-          //   let space = ' '; 
-          //   console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
-          // }
-        
-        }
-        console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+//    i++;
+//    n=0
+
+//    console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+
+//   // for (let i = 1; i <= 10; i++) { 
+//   //   let str = "*"; 
+//   //   let space = ' '; 
+//   //   console.log(space.repeat((n - i)) + str.repeat(i * 2 - 1)); 
+//   // }
+
+// }
 
 
 
 // 4. While loop ашиглан 0-100 хүртэлх тооны бүх тэгш тоог олох.
+// let sum = 0, num = 0;
 
-
+// do {
+//     sum += num;
+//     num = parseInt(prompt("Enter a number: "));
+// } while (num >= 0);
+// console.log(`The sum is ${sum}`);
 
 // 5. Анх нэг тоо хадгалаад дараа нь Prompt ашиглан 1 утга аваад тэр тоог таах хүртэл зогсолтгүй ажиллах loop бичээрэй.
+// let i = 25;
+// const r = Number(prompt("neg tooo oruulna uuu"));
+
+// for ( i = 0 ; i<Infinity ; i++) {
+//   if (i===r) {
+//     console.log(" break " + i);
+//     break
+    
+//   }
+//   else {
+//     console.log(i);
+  
+//   }
+// }
 // 6. Prompt - оор авсан тоог хэдэн оронтойг хэвлэж гарга. Example: input = 1234567; digit: = 7;
+// let num = 12345678;
+// let text = num.toString();
+// let a=0
+// let sum = 0;
+// for (let i = 0 ; i<text.length ; i++) {
+// a++;
+// }
+// console.log(a + ": hamgiin suuliin ooron");
+  
+// if()
+
 // 7. n - д prompt ашиглан утга оруулахад n\*n харьцаатай дөрвөлжин хэвлэх.
+
 // 8. prompt ашиглан n -д утга орууlахад palindrome тоо мөн эсэхийг шалгах.
 //    Example1 : input: 111, output: true
 //    Example2 : input: 110, output: false
 //    Example3 : input: 101, output: true
 //    https://en.wikipedia.org/wiki/Palindromic_number
+
+// function palindromeCheck(number) {
+//   let numStr = number.toString();
+//   return isPalindrome(numStr, 0, numStr.length - 1);
+// }
+
+// function isPalindrome(str, start, end) {
+//   if (start >= end) return true;
+//   if (str[start] !== str[end]) return false;
+//   return isPalindrome(str, start + 1, end - 1);
+// }
+
+// // Checking the given number is palindrome or not
+// console.log(palindromeCheck(121));    // true
+// console.log(palindromeCheck(12321));  // true
+// console.log(palindromeCheck(12345));  // false
+// console.log(palindromeCheck(1221));   // true
+
+
+
+// let n = Number(prompt("too oruulah"));
+// for(i=0 ; i<n ; i++){
+//   if (i===n) {
+
+//   }
+// }
+
+
 // 9. Заавар: n! - n факториал гэж уншина. Энэ нь 1,2,3,…,n тоонуудын үржвэр байна
 //    n!=1⋅2⋅3⋅⋯⋅n
- 
+
 //    5! = 120 / 1*2*3*4*5/
- 
+
 //    Бодлого :
 //    prompt - оор гараас тоо авч тэр тооныхоо факториалыг олох.
- 
+
+
+
+// let numberfa= Number(prompt("too oruulna uu"))
+// let sum = 1;
+// for(i=1 ; i<numberfa+1 ; i++)
+// {
+// sum=i*sum
+// }
+// console.log(sum);
+
 // 10. example 1: input = "Hello World", output = "hELLO wORLD"
 //     example 2: input = "This Is STRING!", output = "tHIS iS string!"
+
+// let input = "This Is STRING!";
+// let sum=[];
+// let a=''
+// for(i=0 ; i<input.length ; i++) {
+//   if(input[i]=== input[i].toUpperCase()){
+//     a=input[i].toLowerCase();
+//     sum+=a
+    
+//   }
+//   else {
+//    a=input[i].toUpperCase();
+//     sum+=a
+//   }
+// }
+// console.log(sum);
+
 // 11. Prompt - оор тоо авна. 1 ээс promp оор авсан тоо хүртэлх нийлбэрийг ол. example: input = 10 1+2+3+4+5+6+7+8+9+10 = 55;
+// let a = Number(prompt("too oruulna uu")) 
+// let sum = 0;
+// for(i = 0 ; i<a+1 ; i++) {
+// sum+=i
+// }
+// console.log(sum);
+
+
 // 12. 3-аас дээш оронтой тоо зарлаад тухайн тоогоо тонгоргож харуулна уу. Жишээ нв Ийм утга 12345 -> 54321.
+
+// let a = 12345
+// let b=a.toString();
+// let check = 10;
+// let sum = [];
+// for(i=0 ; i <= a ; i++) {
+//   if (i>check) {
+//     sum=a%check
+//     check=check*10
+//     console.log(sum);
+    
+//   }
+// }
+// console.log(sum);
+
+
+
 // 13. Өгөгдсөн тоо хүртлэх цифрүүдийг зайгаар тусгаарлан хэвлээрэй. Жишээ нь:
 //     Input: 4  
 //     Output: 0 1 2 3
+
+
+// let input = 4;
+// let space = " "
+// let sum=[]
+// for(i=0 ; i<=input-1 ; i++) {
+//     i+=space
+//     sum += i
+// }
+// console.log(sum);
+
+
 // 14. Бүхэл тоо өгөгдөнө. Жишээн дээрхтэй төстэй тоон хэлбэрийг үүсгэ.
 //     Input: 5
 //     Output: - 1 - 1 2 - 1 2 3 - 1 2 3 4 - 1 2 3 4 5
 //     15в
+
+// let a = 5
+// let check = " "
+// let space = "-"
+// let sum1=[]
+// let sum=[]
+// for (i=0 ; i<1 ; i++)
+// {
+//   for(j=1 ; j<=5 ; j++){
+//     j+=check
+//     sum +=j
+//     console.log(space +sum);
+    
+//   }
+// }
+
+
 // 15. Бүхэл тоо өгөгдөнө. Жишээн дээрхтэй төстэй тоон хэлбэрийг үүсгэ.
 //     Input: 5
 //     Output:
@@ -821,6 +930,10 @@
 //     - 5 4 3
 //     - 5 4
 //     - 5
- 
+let = 5;
+for (let i = n ; i >= 1; i--) { 
+	console.log(i); 
+}
+
 // Palindromic number
 // A palindromic number (also known as a numeral palindrome or a numeric palindrome) is a number (such as 16461) that remains the same when its digits are
